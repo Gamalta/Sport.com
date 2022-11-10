@@ -1,0 +1,61 @@
+:root {
+  --main-width-size: 60%;
+}
+/*
+Header
+*/
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  width: var(--main-width-size);
+  padding: 20px 20%;
+}
+
+header > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header > div:nth-child(2) p {
+  text-align: end;
+  margin: 0;
+}
+
+header a {
+  margin-left: 20px;
+}
+
+/*
+Section
+*/
+.content {
+  width: var(--main-width-size);
+}
+
+/*
+Footer
+*/
+.gertrude {
+  width: calc(50% - 80px); /* 80 etant 2x le padding (droit et gauche)*/
+  left: 25%;
+}
+
+.gertrude ul {
+  padding: 20px 40px;
+}
+
+.separator {
+  width: 15px;
+  height: 15px;
+}
+
+footer section {
+  width: var(--main-width-size);
+  padding-top: 60px;
+}
+
+footer article {
+  /* 30 etant 3x la marge de "footer article" dans styles.css 25 etant 1/4 du contenaire*/
+  width: calc(25% - 30px);
+}

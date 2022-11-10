@@ -1,0 +1,201 @@
+:root {
+  --orange-color: #ea9f06;
+}
+
+/***********************************
+FONTS 
+************************************/
+
+@font-face {
+  font-family: "Liberation";
+  src: url("/assets/fonts/LiberationSans-Bold-webfont.ttf") format("ttf"), url("/assets/fonts/LiberationSans-Regular-webfont.ttf") format("ttf");
+}
+
+/***********************************
+GENERALITES
+************************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+  font-family: "Liberation", Garamond, Verdana, Serif;
+}
+
+/*
+Header
+*/
+
+header {
+  display: flex;
+  background-color: white;
+  background-image: url("/assets/images/background.jpg");
+  padding: 20px 0px;
+}
+/*slogan*/
+header h2 {
+  font-weight: normal;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+h2 > span {
+  color: var(--orange-color);
+}
+
+/*bar de navigation*/
+nav ul {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+/*
+Section
+*/
+.content {
+  margin: 30px auto 0 auto;
+}
+/* tête de catalogue */
+.content img {
+  width: 100%;
+}
+/* articles de la page*/
+.content .articles {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content article {
+  position: relative;
+  margin: 60px;
+}
+/* pourcentage de promotion */
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 85%;
+  background-color: #292929;
+  color: var(--orange-color);
+  border-radius: 10px;
+  padding: 5px;
+}
+/* pourcentage de promotion */
+.tag p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 5px;
+  width: 100%;
+}
+/*nom du model*/
+.title {
+  position: absolute;
+  top: 77%;
+  width: 100%;
+  text-align: center;
+}
+
+.title h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.bottom {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: calc(100%-20px); /* je soustrait les marges */
+  display: flex;
+  justify-content: space-between;
+}
+/*boutton de l'article*/
+.bottom button {
+  background: linear-gradient(#3d3d3d, #1d1d1d);
+  color: white;
+  padding: 0 30px;
+  border: 0 transparent;
+}
+
+/*les prix*/
+.bottom p {
+  margin: 0;
+}
+/*prix normal*/
+.bottom .price {
+  text-decoration: line-through;
+}
+/*prix promo*/
+.bottom .promote-price {
+  color: var(--orange-color);
+}
+
+/*
+Footer
+*/
+
+footer {
+  background: #373737;
+  position: relative;
+  color: white;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.gertrude {
+  position: absolute;
+  top: -10%;
+  text-align: center;
+}
+
+.gertrude ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: white;
+  list-style-type: none;
+}
+
+.separator {
+  background: #d3d3d3;
+  border-radius: 50%;
+}
+
+.gertrude a {
+  color: black;
+  text-decoration: none;
+}
+
+footer section {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #7d7d7d;
+  font-size: 0.7rem;
+}
+
+footer article {
+  margin: 15px;
+}
+
+footer > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer > ul > li {
+  padding: 10px 30px;
+  margin: 0;
+}

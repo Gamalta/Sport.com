@@ -1,0 +1,60 @@
+/*
+Header
+*/
+
+header {
+  flex-direction: column;
+  align-items: center;
+}
+
+/*slogan*/
+header h2 {
+  text-align: center;
+}
+header > div:nth-child(2) {
+  width: calc(100% - 40px);
+}
+/*bar de navigation*/
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav a {
+  margin: auto;
+}
+
+/*
+Section
+*/
+.content {
+  margin: 20px;
+}
+
+/*
+Footer
+*/
+.gertrude {
+  left: 40px;
+  width: calc(100% - 80px); /* 80 etant 2x le padding (droit et gauche)*/
+}
+
+.gertrude ul {
+  padding: 20px 15px;
+  font-size: 0.75rem;
+}
+
+.separator {
+  width: 10px;
+  height: 10px;
+}
+
+footer section {
+  padding-top: 40px;
+}
+
+footer article {
+  /* 30 etant 3x la marge de "footer article" dans styles.css 50 etant 1/2 du contenaire*/
+  width: calc(50% - 30px);
+}
