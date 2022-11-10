@@ -8,7 +8,7 @@ FONTS
 
 @font-face {
   font-family: "Liberation";
-  src: url("/assets/fonts/LiberationSans-Bold-webfont.ttf") format("ttf"), url("/assets/fonts/LiberationSans-Regular-webfont.ttf") format("ttf");
+  src: url("assets/fonts/LiberationSans-Bold-webfont.ttf") format("ttf"), url("assets/fonts/LiberationSans-Regular-webfont.ttf") format("ttf");
 }
 
 /***********************************
@@ -29,7 +29,7 @@ Header
 header {
   display: flex;
   background-color: white;
-  background-image: url("/assets/images/background.jpg");
+  background-image: url("assets/images/background.jpg");
   padding: 20px 0px;
 }
 /*slogan*/
