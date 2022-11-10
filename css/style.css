@@ -29,7 +29,7 @@ Header
 header {
   display: flex;
   background-color: white;
-  background-image: url("../assets/images/background.jpg") scroll repeat 50%;
+  background: url("../assets/images/background.jpg") scroll repeat 50%;
   padding: 20px 0px;
 }
 /*slogan*/
